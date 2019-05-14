@@ -24,7 +24,7 @@ def readShortVideo(video_path, video_category, video_name, downsample_factor=12,
     frames = []
     for frameIdx, frame in enumerate(videogen):
         if frameIdx % downsample_factor == 0:
-            frame = skimage.transform.rescale(frame, rescale_factor, mode='constant', preserve_range=True).astype(np.uint8)
+            frame = skimage.transform.rescale(frame, rescale_factor, mode='constant', preserve_range=True, multichannel=True, anti_aliasing=True).astype(np.uint8)
             frames.append(frame)
         else:
             continue
