@@ -109,8 +109,6 @@ Below is a list of packages you are allowed to import in this assignment:
 > [`scikit-video`](http://www.scikit-video.org/stable/): 1.1.11  
 > [The Python Standard Library](https://docs.python.org/3/library/)
 
-You are also allowed to use any libraries for video I/O.
-
 Note that using packages with different versions will very likely lead to compatibility issues, so make sure that you install the correct version if one is specified above. E-mail or ask the TAs first if you want to import other packages.
 
 ### Remarks
