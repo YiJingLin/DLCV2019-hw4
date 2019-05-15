@@ -75,21 +75,23 @@ We will run your code in the following manner:
 
 **Problem 1**
 
-    bash ./hw4_p1.sh $1 $2
--   `$1` is the folder containing the ***trimmed*** validation videos.
--   `$2` is the folder to which you should output your predicted labels.
+    bash ./hw4_p1.sh $1 $2 $3
+-   `$1` is the folder containing the ***trimmed*** validation videos (e.g. `TrimmedVideos/video/valid/`).
+-   `$2` is the path to the ground truth label file for the videos (e.g. `TrimmedVideos/label/gt_valid.csv`).
+-   `$3` is the folder to which you should output your predicted labels (e.g. `./output/`).
 
 **Problem 2**
 
-    bash ./hw4_p2.sh $1 $2
+    bash ./hw4_p2.sh $1 $2 $3
 -   `$1` is the folder containing the ***trimmed*** validation/test videos.
--   `$2` is the folder to which you should output your predicted labels.
+-   `$2` is the path to the ground truth label file for the videos (e.g. `TrimmedVideos/label/gt_valid.csv` or `TrimmedVideos/label/gt_test.csv`).
+-   `$3` is the folder to which you should output your predicted labels (e.g. `./output/`).
 
 **Problem 3**
 
     bash ./hw4_p3.sh $1 $2
 -   `$1` is the folder containing the ***full-length*** validation videos.
--   `$2` is the folder to which you should output your predicted labels.
+-   `$2` is the folder to which you should output your predicted labels (e.g. `./output/`).
 
 > ***NOTE***  
 > For the sake of conformity, please use the `python3` command to call your `.py` files in all your shell scripts. Do not use `python` or other aliases, otherwise your commands may fail in our autograding scripts.
